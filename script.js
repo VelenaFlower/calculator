@@ -82,7 +82,15 @@ function decimal() {
 }
 
 function clear(id) {
-
+  if (id === 'ce') {
+    display.value = '0';
+    MemoryNewNumber = true;
+  } else if (id === 'c') {
+    display.value = '0';
+    MemoryNewNumber = false;
+    MemoryCurrentNumber = 0;
+    MemoryPendingOperation = '';
+  }
 }
 
 function howWork() {
