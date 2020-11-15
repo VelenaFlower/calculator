@@ -87,7 +87,6 @@ button {
     border-radius: 5px;
     box-shadow: 0 0 10px #000;
     color: #100b86;
-    cursor: pointer;
 }
 .operations-list {
     text-align: left;
