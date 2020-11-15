@@ -3,7 +3,6 @@ const operations = document.querySelectorAll('.operator');
 const decimalBtn = document.getElementById('decimal');
 const clearBtns = document.querySelectorAll('.clear-btn');
 const display = document.getElementById('display');
-const howWorkBtn = document.getElementById('how-work');
 let MemoryCurrentNumber = 0;
 let MemoryNewNumber = false;
 let MemoryPendingOperation = '';
@@ -30,8 +29,6 @@ for (let i = 0; i < clearBtns.length; i++) {
 }
 
 decimalBtn.addEventListener('click', decimal);
-
-howWorkBtn.addEventListener('click', howWork);
 
 function numberPress(number) {
   if (MemoryNewNumber) {
@@ -91,8 +88,4 @@ function clear(id) {
     MemoryCurrentNumber = 0;
     MemoryPendingOperation = '';
   }
-}
-
-function howWork() {
-  
 }

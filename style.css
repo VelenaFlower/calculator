@@ -5,19 +5,9 @@ body {
 .main {
     display: flex;
     justify-content: space-around;
+    max-width: 1400px;
+    margin: 0 auto;
     padding-top: 40px;
-}
-.description {
-    width: 200px;
-    height: 50px;
-    font-weight: bold;
-    line-height: 44px;
-    text-align: center;
-    background-color: #f6f9f3;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #000;
-    color: #100b86;
-    cursor: pointer;
 }
 .calc {
     background-color: #100b86;
@@ -86,6 +76,21 @@ button {
 button {
     margin-left: 0;
     padding: 15px 24px;
+}
+.description {
+    width: 200px;
+    height: 100%;
+    font-weight: bold;
+    line-height: 44px;
+    text-align: center;
+    background-color: #f6f9f3;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    color: #100b86;
+    cursor: pointer;
+}
+.operations-list {
+    text-align: left;
 }
 @media screen and (max-width: 768px) {
     .main {
